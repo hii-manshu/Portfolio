@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -6,74 +9,12 @@ body{
   max-width: 1920px;
   margin: auto;
   box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
-
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
-
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
-
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
-
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
-
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
-
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
-
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 222.2 84% 4.9%;
-
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
-
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
-
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
-
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
-
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
-    }
-
-    
-  }
-  
+ 
 :root{
   --primary--color : #03030303;
   --secondary-color:#F8C401;
@@ -81,28 +22,14 @@ body{
   --purple-color:#c74ef9;
 }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  }
-
-
 /*            CUSTOM GLOBAL CSS           ===============================                  */
-body{
-  font-size: 16px !important;
-  max-width: 1920px !important;
-  margin: auto;
-}
+
 h1{
-  font-size: 50px !important;
+  font-size: 64px !important;
   
 }
 h2{
-  font-size: 40px !important;
+  font-size: 48px !important;
 }
 h3{
   font-size: 35px !important;
@@ -116,12 +43,19 @@ h5{
 h6{
   font-size: 22px !important;
 }
+
+p{
+  font-size: 16px;
+  color:  #333333;
+}
+
+
 @media screen and (max-width: 992px) {
   h1{
-    font-size: 40px !important;
+    font-size: 56px !important;
   }
   h2{
-    font-size: 35px !important;
+    font-size: 44px !important;
   }
   h3{
     font-size: 32px !important;
@@ -132,10 +66,10 @@ h6{
 }
 @media screen and (max-width: 768px) {
   h1{
-    font-size: 35px !important;
+    font-size: 48px !important;
   }
   h2{
-    font-size: 32px !important;
+    font-size: 36px !important;
   }
   h3{
     font-size: 30px !important;
@@ -146,10 +80,10 @@ h6{
 }
 @media screen and (max-width: 480px) {
   h1{
-    font-size: 32px !important;
+    font-size: 40px !important;
   }
   h2{
-    font-size: 30px !important;
+    font-size: 32px !important;
   }
   h3{
     font-size: 28px !important;
@@ -157,6 +91,27 @@ h6{
   h4{
     font-size: 26px !important;
   }
+}
+
+.rounded-md{
+  border-radius: 5px;
+}
+
+input:hover{
+  outline: none;
+  box-shadow: none;
+}
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+textarea:hover{
+  outline: none;
+  box-shadow: none;
+}
+textarea:focus{
+  outline: none;
+  box-shadow: none;
 }
 .bg-primary{
   background-color: var(--primary--color);
@@ -173,11 +128,34 @@ h6{
 .App {
   text-align: center;
 }
-
+.text-sm{
+  font-size: 12px !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.rounded-lg{
+  border-radius: 10px !important;
+}
+/* .py-10{
+  padding:  2.5rem 0 !important;
+}
+.pt-10{
+  padding-top: 2.5rem !important;
+}
+.pb-10{
+  padding-bottom: 2.5rem !important;
+}
+.py-20{
+  padding:  5rem 0 !important;
+}
+.pt-20{
+  padding-top: 5rem !important;
+}
+.pb-20{
+  padding-bottom: 5rem !important;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -189,13 +167,12 @@ h6{
   color: var(--purple-color);
 }
 .App-header {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -212,6 +189,8 @@ h6{
 }
 .container{
   padding: 0 3rem;
+  max-width: 1280px;
+  margin: auto;
 
 }
 @media screen and (max-width: 768px) {
@@ -285,7 +264,6 @@ h6{
   position: relative;
   display: block;
   text-decoration: none;
-  color: #ecf0f1;
   transition: 0.5s;
 }
 .nav-link::after {
@@ -330,14 +308,14 @@ h6{
 }
 .about-nav-link{
   background-color: var(--secondary-color);
-  color: white;
+  color: white !important;
 }
 .about-link{
   transition: 0.3s;
 }
 .about-link:hover{
   background-color: var(--secondary-color);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .card{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -380,7 +358,7 @@ h6{
   color:var(--secondary-color)
 }
 .our-team .slick-dots li button::before{
-  font-size: 15px;
+  font-size: 12px;
 }
 .our-team .slick-dots{
  bottom: -50px;
@@ -402,6 +380,35 @@ h6{
       display: none;
     }
   }
+
+  /* OUR PROJECTS SLICK SLIDER  */
+  .my-projects .slick-dots li.slick-active button:before{
+    color:var(--secondary-color)
+  }
+  .my-projects .slick-dots li button::before{
+    font-size: 12px;
+  }
+  .my-projects .slick-dots{
+   bottom: -50px;
+  }
+  
+  .my-projects .slick-next::before{
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+  .my-projects .slick-prev::before{
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+  .my-projects .slick-dots li button:before{
+    color: var(--secondary-color);
+  }
+    @media only screen and (max-width: 410px) {
+      .my-projects-know-more-btn {
+        display: none;
+      }
+    }
+  
 
 /* CONTINOUSLY ROTATING SETTING BUTTON  */
 
@@ -440,4 +447,9 @@ h6{
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+}
+
+a{
+  color: #000000;
+  font-size: 16px;
 }

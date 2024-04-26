@@ -4,7 +4,7 @@ import Link from "next/link";
 function SecondaryButton({ text, className, url }) {
   return (
     <Link
-      href={`${url}`}
+      href={`${url ? url : "/"}`}
       className={`secondary-btn cursor-pointer ${className}`}
     >
       {text}

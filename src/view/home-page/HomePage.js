@@ -7,8 +7,8 @@ function HomePage() {
   return (
     <div>
       <HeroSection />
-      {/* <OurTeam /> */}
-      {/* <MyProjects /> */}
+      <OurTeam />
+      <MyProjects />
     </div>
   );
 }

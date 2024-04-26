@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle } from "../common/typography.component";
+import { MainTitle, PageTitle } from "../common/typography.component";
 import PrimaryButton from "../common/PrimaryButton";
 import SecondaryButton from "../common/SecondaryButton";
 import { useTranslation } from "react-i18next";
@@ -13,7 +13,7 @@ function HeroSection() {
             <h6 className="text-secondary uppercase">
               UI/UX {t("Designer")} & {t("Developer")}
             </h6>
-            <PageTitle text={t("I'm Himanshu Sharma")} />
+            <MainTitle text={t("I'm Himanshu Sharma")} className="font-bold" />
             <div className="flex sm:gap-3 gap-1 mt-5 btn">
               <PrimaryButton text={t("About Me")} url="/about" />
               <SecondaryButton url="/contact-me" text={t("Contact Me")} />
@@ -23,7 +23,7 @@ function HeroSection() {
         <div className="w-full text-right bg-secondary text-center lg:block hidden">
           <div className="container  items-center justify-center">
             <img
-              src="/public/assets/images/hero-img-banner.png"
+              src="/assets/images/hero-img-banner.png"
               alt="avatar"
               className="h-full m-auto"
               height={400}
