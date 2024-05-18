@@ -5,8 +5,10 @@ import axios from "axios";
 import { SecondaryTitle } from "../common/typography.component";
 import PrimaryButton from "../common/PrimaryButton";
 import SecondaryButton from "../common/SecondaryButton";
+import { useTranslation } from "react-i18next";
 
 function ContactUsForm() {
+  const { t } = useTranslation();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState();
@@ -43,11 +45,11 @@ function ContactUsForm() {
         <div className="text-center">
           <SecondaryTitle
             className="text-center font-semibold"
-            text="Request a Free Test Session"
+            text={t("Request a Free Test Session")}
           />
         </div>
         <p className="text-purple">
-          Guaranteed response within one business day!
+          {t("Guaranteed response within one business day!")}
         </p>
         <div className="w-full">
           <form
@@ -60,7 +62,7 @@ function ContactUsForm() {
                 required
                 id="fullName"
                 type="text"
-                placeholder="Full Name"
+                placeholder={t("Full Name")}
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
               />
@@ -71,7 +73,7 @@ function ContactUsForm() {
                 id="email"
                 required
                 type="email"
-                placeholder="Email"
+                placeholder={t("Email")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -82,7 +84,7 @@ function ContactUsForm() {
                 id="phone"
                 required
                 type="number"
-                placeholder="Phone"
+                placeholder={t("Phone")}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
@@ -93,7 +95,7 @@ function ContactUsForm() {
                 id="country"
                 type="text"
                 required
-                placeholder="Country"
+                placeholder={t("Country")}
                 value={country}
                 onChange={(e) => setCountry(e.target.value)}
                 onError
@@ -104,15 +106,17 @@ function ContactUsForm() {
                 id="message"
                 rows="4"
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 input-border focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:focus:border-blue-500"
-                placeholder="Write your message here..."
+                placeholder={t("Write your message here...")}
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
               ></textarea>
             </div>
             <div>
-              <button type="submit" className="">
-                <SecondaryButton text="Send" />
-              </button>
+              <SecondaryButton
+                text={t("Send")}
+                type="submit"
+                className="m-auto"
+              />
             </div>
           </form>
         </div>

@@ -39,8 +39,9 @@ function ContactMe() {
             className="text-white font-semibold"
           />
           <p className="text-secondary">
-            Want to contact with me ? I&lsquo;d love to hear from you.
-            Here&lsquo;s how you can reach me...
+            {t(
+              "Want to contact with me ? I'd love to hear from you. Here's how you can reach me..."
+            )}
           </p>
         </div>
       </div>
@@ -54,9 +55,7 @@ function ContactMe() {
           </div>
         </div>
       </div>
-      <div>
-        <LocationMap />
-      </div>
+      <div>{/* <LocationMap /> */}</div>
     </div>
   );
 }

@@ -58,8 +58,7 @@ export default function Layout({ children }) {
                   <img
                     // src="/assets/images/about-me.jpeg"
                     src="/assets/images/himanshu.jpg"
-                    className="h-full w-full  h-[150px] w-[150px] object-cover "
-                    style={{ borderRadius: "50%" }}
+                    className=" h-[150px] w-[150px] object-cover rounded-full"
                   />
                 </div>
                 <hr className="w-full h-0.5 bg-gray-200 my-2" />

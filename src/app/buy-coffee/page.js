@@ -1,7 +1,8 @@
+import BuyMeACoffee from "@/components/buy-me-coffee/buyMeACoffee";
 import React from "react";
 
-function BuyMeACoffee() {
-  return <div>BuyMeACoffee</div>;
+function Index() {
+  return <BuyMeACoffee />;
 }
 
-export default BuyMeACoffee;
+export default Index;

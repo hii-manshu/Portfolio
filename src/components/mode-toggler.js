@@ -20,11 +20,11 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Sun
-            className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-white dark:text-black bg-black dark:bg-white rounded-md h-[100px] w-[100px] "
+            className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-black dark:text-white  rounded-md h-[100px] w-[100px] "
             onClick={() => setTheme("dark")}
           />
           <Moon
-            className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100  text-white dark:text-black bg-black dark:bg-white rounded-md h-[50px] w-[50px]"
+            className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100  text-black dark:text-white  rounded-md h-[40px] w-[40px]"
             onClick={() => setTheme("light")}
           />
           <span className="sr-only">Toggle theme</span>

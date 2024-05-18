@@ -98,13 +98,13 @@ function Footer() {
               {t("Home")}
             </Link>
             <Link
-              href="/blog"
+              href="/blogs"
               className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
             >
               {t("Blog")}
             </Link>
             <Link
-              href="/about"
+              href="/about-me"
               className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
             >
               {t("About")}
@@ -149,7 +149,7 @@ function Footer() {
       </div>
 
       <div className="bottom-footer bg-[#F0F8FF] dark:bg-black">
-        <hr class="h-0.5 border-t-0 bg-gray-300 dark:bg-white/50" />
+        <hr className="h-0.5 border-t-0 bg-gray-300 dark:bg-white/50" />
         <div className="py-5">
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
             <div className="text-[14px]">

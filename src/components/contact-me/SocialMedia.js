@@ -13,7 +13,7 @@ function SocialMedia() {
         <MainTitle text={t("Touch")} className="text-secondary font-bold" />
       </div>
       <p className="dark:text-white">
-        Get in touch with the right people, I&rsquo;m here to help.
+        {t("Get in touch with the right people, I’m here to help.")}
       </p>
       <ul className="flex flex-col gap-8 sm:my-10 my-5">
         <li className="get-in-touch-li">
@@ -28,11 +28,12 @@ function SocialMedia() {
             </a>
             <div className="flex flex-col gap-3 ">
               <p className="text-lg get-in-touch-text dark:text-white">
-                Hapur:
+                {t("Hapur")}:
               </p>
               <p className="dark:text-white text-[14px]">
-                Behind SDA School, Street no. 07, Krishna Vihar, Meerut Road
-                Hapur, 245101
+                {t(
+                  "Behind SDA School, Street no. 07, Krishna Vihar, Meerut Road Hapur, 245101"
+                )}
               </p>
             </div>
           </div>
@@ -45,7 +46,9 @@ function SocialMedia() {
               </div>
             </a>
             <div className="flex flex-col gap-3">
-              <p className="dark:text-white get-in-touch-text text-lg">Mail:</p>
+              <p className="dark:text-white get-in-touch-text text-lg">
+                {t("Mail")}:
+              </p>
               <p
                 className="dark:text-white text-[14px]"
                 style={{ wordBreak: "break-word" }}
@@ -63,7 +66,9 @@ function SocialMedia() {
               </div>
             </a>
             <div className="flex flex-col gap-3">
-              <p className="dark:text-white get-in-touch-text text-lg">Call:</p>
+              <p className="dark:text-white get-in-touch-text text-lg">
+                {t("Call")}:
+              </p>
               <p className="dark:text-white text-[14px]">+91 7310630809</p>
             </div>
           </div>
@@ -77,7 +82,7 @@ function SocialMedia() {
             </a>
             <div className="flex flex-col gap-3">
               <p className=" dark:text-white get-in-touch-text text-lg">
-                Skype:
+                {t("Skype")}:
               </p>
               <p className="dark:text-white text-[14px]">himanshu.2</p>
             </div>
@@ -92,7 +97,7 @@ function SocialMedia() {
             </a>
             <div className="flex flex-col gap-3">
               <p className=" dark:text-white get-in-touch-text text-lg">
-                Whatsapp:
+                {t("Whatsapp")}:
               </p>
               <p className="dark:text-white text-[14px]">+91 7310630809</p>
             </div>

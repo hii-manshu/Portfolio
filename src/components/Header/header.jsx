@@ -4,6 +4,7 @@ import styles from "../../styles/Navbar.module.css";
 import Link from "next/link";
 // import LanguageSelect from "../common/LanguageSelect";
 import { useTranslation } from "react-i18next";
+import LanguageSelect from "../common/LanguageSelect";
 function Navbar() {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
@@ -66,9 +67,9 @@ function Navbar() {
                 {t("Contact Me")}
               </Link>
             </li>
-            {/* <li>
+            <li>
               <LanguageSelect />
-            </li> */}
+            </li>
           </ul>
 
           <div

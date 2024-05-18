@@ -10,7 +10,7 @@ const blogData = [
     createdAt: "Sunday, Apr 21 2024",
     description:
       " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum....",
-    buttonUrl: "/",
+    buttonUrl: "/blogs/react-versus-next-which-one-is-better-and-why",
   },
   {
     image: "/assets/images/about-bg.png",
@@ -18,7 +18,7 @@ const blogData = [
     createdAt: "Sunday, Apr 21 2024",
     description:
       " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum....",
-    buttonUrl: "/",
+    buttonUrl: "/blogs/my-journey-as-a-front-end-developer",
   },
 ];
 
@@ -69,6 +69,7 @@ function Blogs() {
                   lorem ipsum....
                 </p>
                 <SecondaryButton
+                  url="/blogs/technologies-which-i-used-in-this-Project"
                   text="Read More"
                   className="inline-block max-w-[160px] md:mt-10 mt-5"
                 />

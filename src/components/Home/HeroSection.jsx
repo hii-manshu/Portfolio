@@ -15,7 +15,7 @@ function HeroSection() {
             </h6>
             <MainTitle text={t("I'm Himanshu Sharma")} className="font-bold" />
             <div className="flex sm:gap-3 gap-1 mt-5 btn">
-              <PrimaryButton text={t("About Me")} url="/about" />
+              <PrimaryButton text={t("About Me")} url="/about-me" />
               <SecondaryButton url="/contact-me" text={t("Contact Me")} />
             </div>
           </div>
