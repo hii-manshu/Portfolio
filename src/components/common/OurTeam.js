@@ -93,8 +93,11 @@ function OurTeam() {
       <div className="container m-auto">
         <div className="flex lg:items-center items-start justify-between">
           <div className="flex gap-3 items-center mb-10">
-            <MainTitle text={t("Our Team")} className="font-semibold" />
-            <hr className="h-1 w-20 bg-black mt-2 dark:bg-white " />
+            <MainTitle
+              text={t("Our Team")}
+              className="font-semibold text-black dark:text-secondary "
+            />
+            <hr className="h-1 w-20 bg-black mt-2 dark:bg-secondary " />
           </div>
           <SecondaryButton
             text={t("Know More")}

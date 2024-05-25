@@ -467,3 +467,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.language-dropdown{
+  display: none;
+  transition: 0.3s;
+}
+.language-div:hover{
+  .language-dropdown{
+    display: block;
+    transition: 0.3s;
+  }
+
+}

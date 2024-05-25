@@ -37,8 +37,11 @@ export default function Layout({ children }) {
           style={style}
         >
           <div className="container">
-            <PageTitle text={t("About Me")} className="text-white" />
-            <p className="text-white">Lorem Ipsum</p>
+            <PageTitle
+              text={t("About Me")}
+              className="text-white dark:text-secondary font-semibold"
+            />
+            <p className="text-secondary dark:text-white">Lorem Ipsum</p>
           </div>
           <div className="profile-pic md:hidden block">
             <div className="about-me-img absolute top-[60%] left-[50%]">

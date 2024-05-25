@@ -60,8 +60,11 @@ function Projects() {
         style={style}
       >
         <div className="container m-auto">
-          <PageTitle className="text-white" text={t("Projects")} />
-          <p className="text-secondary">
+          <PageTitle
+            className="dark:text-secondary text-white font-semibold"
+            text={t("Projects")}
+          />
+          <p className="text-secondary dark:text-white">
             {t("in which I contributed as a Front-End Developer !")}
           </p>
         </div>

@@ -34,7 +34,10 @@ function Aboutme() {
         style={style}
       >
         <div className="container">
-          <PageTitle text={t("About Me")} className="text-white" />
+          <PageTitle
+            text={t("About Me")}
+            className="text-white dark:text-secondary font-semibold "
+          />
           <p className="text-white">Lorem Ipsum</p>
         </div>
         <div className="profile-pic md:hidden block">

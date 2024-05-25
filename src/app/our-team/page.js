@@ -112,7 +112,7 @@ function OurTeam() {
             className="text-white dark:text-secondary font-semibold"
             text={t("Our Team")}
           />
-          <p className="text-secondary">
+          <p className="text-secondary dark:text-white">
             {t("Here is the some details of my colleagues!")}
           </p>
         </div>

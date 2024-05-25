@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const projectsData = [
   {
@@ -74,8 +75,11 @@ function MyProjects() {
       <div className="container m-auto my-projects">
         <div className="flex lg:items-center items-start justify-between">
           <div className="flex gap-3 items-center mb-10">
-            <MainTitle text={t("Projects")} className="font-semibold" />
-            <hr className="h-1 w-20 bg-black mt-2 dark:bg-white" />
+            <MainTitle
+              text={t("Projects")}
+              className="font-semibold text-black dark:text-secondary"
+            />
+            <hr className="h-1 w-20 bg-black mt-2 dark:bg-secondary" />
           </div>
           <SecondaryButton
             text={t("Know More")}
@@ -86,18 +90,20 @@ function MyProjects() {
         <Slider {...settings}>
           {projectsData &&
             projectsData?.map((team, key) => (
-              <div key={key}>
+              <a href={team.url} key={key} target="_blank">
                 <div className="flex  flex-col items-center">
                   <img
                     src={team?.img}
                     className="max-h-[200px] max-w-[300px] object-cover border-1 border-gray-600"
                   />
                   <h6 className="dark:text-white">{t(team?.name)}</h6>
-                  <p className="text-[14px] dark:text-white">
-                    ({t(team?.role)})
-                  </p>
+                  <div className="flex gap-2 items-center">
+                    {team?.technologies.map((tech) => (
+                      <p className="text-[14px] dark:text-white">({t(tech)})</p>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
         </Slider>
       </div>

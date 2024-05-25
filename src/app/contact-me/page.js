@@ -36,9 +36,9 @@ function ContactMe() {
         <div className=" container flex flex-col gap-1">
           <PageTitle
             text={t("Contact Me")}
-            className="text-white font-semibold"
+            className="text-white dark:text-secondary font-semibold"
           />
-          <p className="text-secondary">
+          <p className="dark:text-white text-secondary">
             {t(
               "Want to contact with me ? I'd love to hear from you. Here's how you can reach me..."
             )}

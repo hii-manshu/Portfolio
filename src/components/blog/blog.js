@@ -40,10 +40,10 @@ function Blogs() {
       >
         <div className="container m-auto">
           <PageTitle
-            className="text-white dark:text-secondary"
+            className="text-white dark:text-secondary font-semibold"
             text={t("Blogs")}
           />
-          <p className="text-secondary ">
+          <p className="text-secondary dark:text-white">
             {t("These blogs help you to become a successfull developer !")}
           </p>
         </div>

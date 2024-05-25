@@ -49,9 +49,9 @@ function BuyMeACoffee() {
           <div className=" container flex flex-col gap-1">
             <PageTitle
               text={t("Buy A Coffee")}
-              className="text-white font-semibold"
+              className="text-white dark:text-secondary font-semibold"
             />
-            <p className="text-secondary">
+            <p className="text-secondary dark:text-white">
               {t(
                 "Buy me a coffee and support my creative work. A supporter is worth a thousand followers."
               )}

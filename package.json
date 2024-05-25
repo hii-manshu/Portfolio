@@ -1,5 +1,5 @@
 {
-  "name": "portfolios",
+  "name": "Himanshu Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,9 +23,9 @@
     "animate.css": "^4.1.1",
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "formik": "^2.4.6",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.2.4",
     "google-map-react": "^2.2.1",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.1",

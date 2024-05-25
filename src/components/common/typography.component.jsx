@@ -1,9 +1,7 @@
 import React from "react";
 
 export function PageTitle({ text, className }) {
-  return (
-    <h1 className={`font-semibold dark:text-white ${className} `}>{text}</h1>
-  );
+  return <h1 className={`${className} `}>{text}</h1>;
 }
 
 export function MainTitle({ text, className }) {

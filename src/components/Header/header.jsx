@@ -20,15 +20,16 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 z-10 ">
+    <div className="sticky top-0 z-10 shadow-lg">
       <header className="App-header">
-        <nav className={`${styles.navbar} items-center`}>
+        <nav className={`${styles.navbar} items-center bg-white dark:bg-black`}>
           <Link href="/">
             <img
               src="/assets/images/logo.png"
               alt="logo"
               width={170}
               height={50}
+              className="animate__animated animate__backInRight"
             />
           </Link>
           <ul
@@ -37,33 +38,51 @@ function Navbar() {
             } unorder-list`}
           >
             <li onClick={removeActive}>
-              <Link href="/about-me" className={`${styles.navLink} nav-link `}>
+              <Link
+                href="/about-me"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight `}
+              >
                 {t("About Me")}
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link href="/projects" className={`${styles.navLink} nav-link`}>
+              <Link
+                href="/projects"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+              >
                 {t("Projects")}
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link href="/blogs" className={`${styles.navLink} nav-link`}>
+              <Link
+                href="/blogs"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+              >
                 {t("Blogs")}
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link href="/our-team" className={`${styles.navLink} nav-link`}>
+              <Link
+                href="/our-team"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+              >
                 {t("Team")}
               </Link>
             </li>
             <li onClick={removeActive}>
-              <Link href="/buy-coffee" className={`${styles.navLink} nav-link`}>
+              <Link
+                href="/buy-coffee"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+              >
                 {t("Buy me a Coffee")}
               </Link>
             </li>
 
             <li onClick={removeActive}>
-              <Link href="/contact-me" className={`${styles.navLink} nav-link`}>
+              <Link
+                href="/contact-me"
+                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+              >
                 {t("Contact Me")}
               </Link>
             </li>

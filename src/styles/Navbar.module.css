@@ -5,7 +5,6 @@
 
   /* navbar */
   .navbar {
-    background-color: aliceblue;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,6 @@
   }
 
 .nav-link{
-  color: #120f0b;
   font-size: 14px;
 }
   /* ul  */
@@ -30,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
   }
 
   /* media queries */
@@ -76,7 +74,6 @@
       text-align: start;
       width: 100%;
       transition: 0.7s ease-in-out;
-      background-color: aliceblue;
       padding: 10px;
     }
 
