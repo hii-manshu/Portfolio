@@ -5,6 +5,7 @@ import SecondaryButton from "../common/SecondaryButton";
 import { useTranslation } from "react-i18next";
 import { Lamp } from "./lamp";
 import { TypewriterEffectSmoot } from "./type-writer";
+import Image from "next/image";
 function HeroSection() {
   const { t } = useTranslation();
   return (
@@ -33,7 +34,7 @@ function HeroSection() {
             <img
               src="/assets/images/hero-img-banner.png"
               alt="avatar"
-              className="h-full m-auto animate__animated animate__fadeInBottomRight"
+              className=" m-auto animate__animated animate__fadeInBottomRight"
               height={400}
             />
           </div>

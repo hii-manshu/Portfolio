@@ -1,6 +1,7 @@
 
   .unorder-list {
     list-style: none;
+    background: #000000;
   } 
 
   /* navbar */
@@ -42,7 +43,6 @@
     }
 
     .bar {
-          background-color: #120f0b;
           width: 20px;
           height: 3px;
           display: block;

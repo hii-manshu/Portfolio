@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { MainTitle } from "./typography.component";
 import { useTranslation } from "react-i18next";
 import SecondaryButton from "./SecondaryButton";
+import Image from "next/image";
 
 const teamData = [
   {
@@ -94,7 +95,7 @@ function OurTeam() {
         <div className="flex lg:items-center items-start justify-between">
           <div className="flex gap-3 items-center mb-10">
             <MainTitle
-              text={t("Our Team")}
+              text={t("Team")}
               className="font-semibold text-black dark:text-secondary "
             />
             <hr className="h-1 w-20 bg-black mt-2 dark:bg-secondary " />
@@ -110,12 +111,15 @@ function OurTeam() {
             teamData.map((team, key) => (
               <div key={key}>
                 <div className="flex flex-col items-center p-2">
-                  <img
+                  <Image
+                    alt="team"
+                    height={250}
+                    width={400}
                     src={team?.img}
                     className="h-[250px] w-[400px] object-cover rounded-lg"
                   />
                   <h6 className=" dark:text-white mt-3">{t(team?.name)}</h6>
-                  <p className="dark:text-white text-[14px]">
+                  <p className="dark:text-secondary text-[14px]">
                     ({t(team?.role)})
                   </p>
                 </div>

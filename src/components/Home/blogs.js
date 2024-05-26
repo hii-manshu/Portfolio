@@ -19,7 +19,7 @@ function HomeBlogs() {
             <hr className="h-1 w-20 bg-black mt-2 dark:bg-secondary" />
           </div>
           <SecondaryButton
-            text={t("Know More")}
+            text={t("View All")}
             url="/blogs"
             className=" py-2 px-3 mt-1 our-team-know-more-btn capitalize"
           />
@@ -28,33 +28,37 @@ function HomeBlogs() {
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10 justify-between">
           <div className="md:col-span-2 col-span-1  ">
             <div className="flex flex-col gap-1">
-              <Image
-                src="/assets/images/project-bg.png"
-                height={300}
-                width={500}
-                className="w-full h-full rounded-md object-cover"
-              />
-              <h6 className="font-semibold text-black dark:text-secondary mt-3">
-                {t("Technologies which I used in this Project")}
-              </h6>
-              <p className="text-black dark:text-white">
-                Lorem Ispum ..........
-              </p>
+              <Link href="/blogs/technologies-which-i-used-in-this-Project">
+                <Image
+                  src="/assets/images/blog/technology.jpg"
+                  height={300}
+                  width={500}
+                  alt="blog"
+                  className="w-full h-full rounded-md object-cover"
+                />
+              </Link>
               <Link
                 href="/blogs/technologies-which-i-used-in-this-Project"
-                className="text-red-600 underline"
+                className="font-semibold text-black dark:text-secondary mt-3 hover:underline"
               >
-                {t("Read More")}
+                <h6>{t("Technologies which I used in this Project")}</h6>
               </Link>
+              <p className="text-black dark:text-white">
+                {t(
+                  "Every project tells a story of the technologies embraced, each line of code a chapter in its narrative."
+                )}
+              </p>
+              <small>5 min read . {t("April")} 21, 2024</small>
             </div>
           </div>
           <div className="col-span-1">
             <div className="flex flex-col gap-6">
               <div className="flex gap-4">
                 <Image
-                  src="/assets/images/project-bg.png"
+                  src="/assets/images/blog/reactjs.jpg"
                   height={80}
                   width={80}
+                  alt="blog"
                   className="object-cover rounded-md"
                 />
                 <Link
@@ -66,7 +70,7 @@ function HomeBlogs() {
               </div>
               <div className="flex gap-4">
                 <Image
-                  src="/assets/images/project-bg.png"
+                  src="/assets/images/blog/journey.png"
                   height={80}
                   width={80}
                   className="object-cover rounded-md"

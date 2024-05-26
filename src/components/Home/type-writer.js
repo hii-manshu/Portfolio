@@ -8,9 +8,9 @@ export function TypewriterEffectSmoot() {
     {
       text: "Himanshu",
     },
-    {
-      text: "Sharma",
-    },
+    // {
+    //   text: "Sharma",
+    // },
   ];
   return <TypewriterEffectSmooth words={words} />;
 }

@@ -16,7 +16,7 @@ function LanguageSelect() {
     <div className="relative cursor-pointer language-div animate__animated animate__backInRight">
       {i18n.language === "hi" ? (
         <Image
-          src="/assets/images/indian.webp"
+          src="/assets/images/hindi.gif"
           width={30}
           height={30}
           alt="lng"
@@ -37,7 +37,7 @@ function LanguageSelect() {
           onClick={() => changeLanguage("hi")}
         >
           <Image
-            src="/assets/images/indian.webp"
+            src="/assets/images/hindi.gif"
             width={30}
             height={30}
             alt="lng"

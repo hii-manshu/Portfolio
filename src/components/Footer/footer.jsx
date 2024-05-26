@@ -16,9 +16,9 @@ function Footer() {
           <div className="flex flex-col gap-3">
             <Link href="/">
               <img
-                src="/assets/images/logo.png"
+                src="/assets/images/newlogo.png"
                 alt="logo"
-                width={260}
+                width={200}
                 className="rotate-logo"
               />
             </Link>

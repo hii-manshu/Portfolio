@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const projectsData = [
   {
@@ -52,14 +53,23 @@ function MyProjects() {
     dots: true,
     infinite: true,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1020,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -91,17 +101,20 @@ function MyProjects() {
           {projectsData &&
             projectsData?.map((team, key) => (
               <a href={team.url} key={key} target="_blank">
-                <div className="flex  flex-col items-center">
-                  <img
+                <div className="flex  flex-col gap-3 items-center">
+                  <Image
+                    width={300}
+                    height={200}
+                    alt="project"
                     src={team?.img}
-                    className="max-h-[200px] max-w-[300px] object-cover border-1 border-gray-600"
+                    className="w-full  h-[200px] w-[300px] object-cover border-1 border-gray-600 rounded-lg"
                   />
                   <h6 className="dark:text-white">{t(team?.name)}</h6>
-                  <div className="flex gap-2 items-center">
+                  {/* <div className="flex gap-2 items-center">
                     {team?.technologies.map((tech) => (
                       <p className="text-[14px] dark:text-white">({t(tech)})</p>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </a>
             ))}

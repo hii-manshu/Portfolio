@@ -5,6 +5,7 @@ import Link from "next/link";
 // import LanguageSelect from "../common/LanguageSelect";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../common/LanguageSelect";
+import Image from "next/image";
 function Navbar() {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
@@ -24,10 +25,10 @@ function Navbar() {
       <header className="App-header">
         <nav className={`${styles.navbar} items-center bg-white dark:bg-black`}>
           <Link href="/">
-            <img
-              src="/assets/images/logo.png"
+            <Image
+              src="/assets/images/newlogo.png"
               alt="logo"
-              width={170}
+              width={130}
               height={50}
               className="animate__animated animate__backInRight"
             />
@@ -95,9 +96,9 @@ function Navbar() {
             className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
             onClick={toggleActiveClass}
           >
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
+            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
           </div>
         </nav>
       </header>
