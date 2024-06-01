@@ -107,7 +107,7 @@ function MyProjects() {
                     height={200}
                     alt="project"
                     src={team?.img}
-                    className="w-full  h-[200px] w-[300px] object-cover border-1 border-gray-600 rounded-lg"
+                    className="w-full  h-[200px] w-[300px] p-3 object-cover border-1 border-gray-600 rounded-lg"
                   />
                   <h6 className="dark:text-white">{t(team?.name)}</h6>
                   {/* <div className="flex gap-2 items-center">
