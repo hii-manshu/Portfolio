@@ -1,6 +1,5 @@
 "use client";
 import {
-  Button,
   Dialog,
   DialogPanel,
   DialogTitle,
@@ -8,14 +7,45 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import PrimaryButton from "../common/PrimaryButton";
+import Image from "next/image";
+import * as Yup from "yup";
+import { useFormik } from "formik";
+import PaypalPaymentGateway from "./paypalPaymentGateway";
+
+const validateSchema = Yup.object().shape({
+  email: Yup.string()
+    .email("Invalid email")
+    .required("Please enter your Email."),
+});
 
 export default function PaymentDialog({ isOpen, close, count }) {
+  const { t } = useTranslation();
+  const [isPaypal, setIsPaypal] = useState(false);
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: validateSchema,
+    onSubmit: (values, { resetForm }) => {
+      // resetForm();
+      setIsPaypal(true);
+    },
+  });
+
+  const handleClose = () => {
+    close();
+    setIsPaypal(false);
+    formik.setFieldValue("email", "");
+  };
   return (
     <Transition appear show={isOpen}>
       <Dialog
         as="div"
         className="relative z-10 focus:outline-none"
-        onClose={close}
+        onClose={handleClose}
         __demoMode
       >
         <div className="fixed inset-0 z-10  overflow-y-auto">
@@ -28,25 +58,75 @@ export default function PaymentDialog({ isOpen, close, count }) {
               leaveFrom="opacity-100 transform-[scale(100%)]"
               leaveTo="opacity-0 transform-[scale(95%)]"
             >
-              <DialogPanel className="w-full max-w-lg rounded-xl bg-white p-6 shadow-3xl">
+              <DialogPanel className="w-full max-w-lg rounded-xl  bg-white dark:bg-black  p-6 shadow-3xl relative">
+                <div className="relative">
+                  <Image
+                    src="/assets/images/ba.webp"
+                    width={100}
+                    height={100}
+                    alt="ba"
+                    className="rounded-full"
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -70%)",
+                    }}
+                  />
+                </div>
                 <DialogTitle
                   as="h5"
-                  className="text-base/7  dark:text-black text-white text-center"
+                  className="text-base/7 text-black dark:text-white text-center mt-12"
                 >
-                  <span>Support</span>{" "}
-                  <span className="font-semibold">Himanshu Sharma</span>
+                  <span>{t("Support")}</span>{" "}
+                  <span className="font-semibold">{t("Himanshu Sharma")}</span>
                 </DialogTitle>
-                <p className="mt-2 text-sm/6 text-white/50 dark:text-black text-center">
-                  You’ll be charged ${count}
+                <p className="mt-2 text-sm/6 text-black dark:text-white text-center">
+                  {t("You’ll be charged")} ${count}
                 </p>
-                <div className="mt-4">
-                  <Button
-                    className="inline-flex items-center gap-2 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white"
-                    onClick={close}
-                  >
-                    Got it, thanks!
-                  </Button>
-                </div>
+                <form onSubmit={formik.handleSubmit}>
+                  <div className="mt-10 flex flex-col gap-8">
+                    <div>
+                      <input
+                        type="email"
+                        id="email"
+                        className="py-2 w-full rounded-lg px-3 border border-black dark:border-white"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        value={formik.values.email}
+                        onChange={formik.handleChange}
+                      />
+                      {formik.touched.email && formik.errors.email && (
+                        <small className="text-error">
+                          {formik.errors.email}
+                        </small>
+                      )}
+                    </div>
+                    {!isPaypal ? (
+                      <>
+                        <PrimaryButton
+                          text={"Support"}
+                          className="font-medium"
+                          type="submit"
+                        />
+                        <small className="text-center">
+                          {t("Payment secured by")}{" "}
+                          <span className="font-semibold">{t("PayPal.")}</span>
+                          &nbsp;
+                          {t(
+                            "You’ll be taken to a thank you page after the payment."
+                          )}
+                        </small>
+                      </>
+                    ) : (
+                      <PaypalPaymentGateway
+                        amount={count}
+                        setIsPaypal={setIsPaypal}
+                        close={handleClose}
+                      />
+                    )}
+                  </div>
+                </form>
               </DialogPanel>
             </TransitionChild>
           </div>

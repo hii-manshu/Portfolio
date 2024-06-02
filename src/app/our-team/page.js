@@ -113,7 +113,9 @@ function OurTeam() {
             text={t("Our Team")}
           />
           <p className="text-secondary dark:text-white">
-            {t("Here is the some details of my colleagues!")}
+            {t(
+              "United by code, driven by innovation. Meet the team behind the pixels, where passion and proficiency converge to create exceptional user experiences."
+            )}
           </p>
         </div>
       </div>

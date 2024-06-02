@@ -20,6 +20,7 @@ body{
   --secondary-color:#F8C401;
   --light-secondary-color:#f9e6a2;
   --purple-color:#c74ef9;
+  --error-color:#ff3333;
 }
 
 /*            CUSTOM GLOBAL CSS           ===============================                  */
@@ -125,6 +126,9 @@ textarea:focus{
 }
 .text-secondary{
   color: var(--secondary-color);
+}
+.text-error{
+  color: var(--error-color);
 }
 .App {
   text-align: center;
@@ -327,6 +331,15 @@ textarea:focus{
   width: 200px;
   border-radius: 50%;
   background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 380px) {
+  .experience .work-experience{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+  }
 }
 
 /* //        Contact US    */

@@ -1,6 +1,7 @@
 "use client";
 import { PageTitle } from "@/components/common/typography.component";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
@@ -41,25 +42,33 @@ export default function Layout({ children }) {
               text={t("About Me")}
               className="text-white dark:text-secondary font-semibold"
             />
-            <p className="text-secondary dark:text-white">Lorem Ipsum</p>
+            <p className="text-secondary dark:text-white">
+              {t(
+                "Stronger than I've been before, confident in who I am, fueled by my passions, and unapologetically me."
+              )}
+            </p>
           </div>
-          <div className="profile-pic md:hidden block">
+          {/* <div className="profile-pic md:hidden block">
             <div className="about-me-img absolute top-[60%] left-[50%]">
-              <img
+              <Image
+                width={200}
+                height={200}
+                alt="profile"
                 // src="/assets/images/about-me.jpeg"
                 src="/assets/images/himanshu.jpg"
                 className="h-full w-full rounded-full h-[200px] w-[200px] object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="md:pt-10 pt-20 pb-10 px-5">
           <div className="grid md:grid-cols-8 grid-cols-1 lg:gap-5 md:gap-2 gap-5 text-center">
             <div className="md:col-span-2 text-center w-full">
               <ul className="flex md::flex-col flex-row flex-wrap md::gap-2 justify-between border md::border-1 border-gray-500 rounded-md p-2 items-center text-left">
-                <div className="m-auto md:block hidden">
-                  <img
-                    // src="/assets/images/about-me.jpeg"
+                <div className="m-auto">
+                  <Image
+                    width={150}
+                    height={150}
                     src="/assets/images/himanshu.jpg"
                     className=" h-[150px] w-[150px] object-cover rounded-full"
                   />

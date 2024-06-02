@@ -2,6 +2,7 @@
 import React from "react";
 import { MainTitle } from "../common/typography.component";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const techColor = [
   "#C70039",
@@ -26,8 +27,11 @@ function TeamUSPCard({ name, img, detail, technologies }) {
   return (
     <div className="our-team-item flex justify-between  md:gap-10 gap-5">
       <div className="w-full">
-        <img
+        <Image
           src={img}
+          width={500}
+          height={300}
+          alt="team"
           className="max-h-[500px] object-cover w-full rounded-xl"
         />
       </div>

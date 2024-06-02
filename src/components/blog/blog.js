@@ -2,22 +2,23 @@
 import { useTranslation } from "react-i18next";
 import { PageTitle } from "@/components/common/typography.component";
 import SecondaryButton from "../common/SecondaryButton";
+import Image from "next/image";
 
 const blogData = [
   {
-    image: "/assets/images/projects-bg.png",
+    image: "/assets/images/blog/reactjs.jpg",
     title: "React JS V/S Next JS which one is better and why ?",
-    createdAt: "Sunday, Apr 21 2024",
+    createdAt: "Sunday, May 26 2024",
     description:
-      " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum....",
+      "In the world of web development, choosing the right JavaScript framework can be crucial to the success of your project....",
     buttonUrl: "/blogs/react-versus-next-which-one-is-better-and-why",
   },
   {
-    image: "/assets/images/about-bg.png",
-    title: "My Journey as a Front-End Developer",
-    createdAt: "Sunday, Apr 21 2024",
+    image: "/assets/images/blog/journey.png",
+    title: "My Journey as a Front-End Developer!",
+    createdAt: "Sunday, May 02 2024",
     description:
-      " lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum....",
+      "As a front-end developer, I've embarked on a journey filled with challenges, learning opportunities, and moments of inspiration....",
     buttonUrl: "/blogs/my-journey-as-a-front-end-developer",
   },
 ];
@@ -53,20 +54,25 @@ function Blogs() {
           <div className="flex flex-col gap-10  md:gap-20">
             <div className="flex md:flex-row flex-col gap-10">
               <div className="w-full">
-                <img
-                  src="/assets/images/projects-bg.png"
-                  className="rounded-lg"
+                <Image
+                  width={500}
+                  height={300}
+                  src="/assets/images/blog/technology.jpg"
+                  className="rounded-lg w-full "
                 />
               </div>
               <div className="w-full">
-                <h4 className="font-semibold ">
-                  Technologies which I used in this Project
+                <h4 className="font-semibold text-black text-secondary">
+                  {t("Technologies which I used in this Project")}
                 </h4>
                 <p className="text-black dark:text-white text-[12px]">
-                  Sunday, Apr 21 2024
+                  {t("Sunday")}, {t("April")} 21 2024
                 </p>
-                <p className="text-black dark:text-white mt-5">
-                  lorem ipsum....
+                <p className="text-black dark:text-white mt-3">
+                  {t(
+                    "In the ever-evolving landscape of web development, selecting the right technologies can significantly impact the outcome of a project. Recently, I had the opportunity"
+                  )}
+                  ...
                 </p>
                 <SecondaryButton
                   url="/blogs/technologies-which-i-used-in-this-Project"
@@ -82,18 +88,25 @@ function Blogs() {
                     className="w-full flex flex-col gap-3 md:h-full"
                     key={key}
                   >
-                    <img src={blog?.image} className="rounded-lg" />
+                    <Image
+                      width={500}
+                      height={300}
+                      src={blog?.image}
+                      className="rounded-lg w-full h-full object-cover"
+                    />
                     <div className="flex flex-col justify-between w-full md:h-full">
-                      <h4 className="font-semibold">{blog?.title}</h4>
+                      <h5 className="font-semibold text-black text-secondary">
+                        {t(blog?.title)}
+                      </h5>
                       <p className="text-black dark:text-white text-[12px]">
                         {" "}
-                        {blog?.createdAt}
+                        {t(blog?.createdAt)}
                       </p>
-                      <p className="text-black dark:text-white mt-5">
-                        lorem ipsum....
+                      <p className="text-black dark:text-white mt-2">
+                        {t(blog?.description)}
                       </p>
                       <SecondaryButton
-                        text="Read More"
+                        text={t("Read More")}
                         url={blog?.buttonUrl}
                         className="inline-block max-w-[160px] mt-5"
                       />

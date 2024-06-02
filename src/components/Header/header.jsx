@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../common/LanguageSelect";
 import Image from "next/image";
+import { ModeToggle } from "../mode-toggler";
 function Navbar() {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
@@ -36,7 +37,7 @@ function Navbar() {
           <ul
             className={`${styles.navMenu} ${
               isActive ? styles.active : ""
-            } unorder-list`}
+            } unorder-list bg-white dark:bg-black`}
           >
             <li onClick={removeActive}>
               <Link
@@ -75,7 +76,7 @@ function Navbar() {
                 href="/buy-coffee"
                 className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
               >
-                {t("Buy me a Coffee")}
+                {t("Buy Coffee")}
               </Link>
             </li>
 
@@ -87,18 +88,18 @@ function Navbar() {
                 {t("Contact Me")}
               </Link>
             </li>
-            <li>
-              <LanguageSelect />
-            </li>
           </ul>
-
-          <div
-            className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
-            onClick={toggleActiveClass}
-          >
-            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
-            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
-            <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+          <div className="flex items-center gap-5">
+            <LanguageSelect />
+            <ModeToggle />
+            <div
+              className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
+              onClick={toggleActiveClass}
+            >
+              <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+              <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+              <span className={`${styles.bar} bg-black dark:bg-white`}></span>
+            </div>
           </div>
         </nav>
       </header>

@@ -17,7 +17,7 @@ const teamData = [
   {
     name: "Rakesh Kumar",
     img: "/assets/images/our-team/rakesh-kumar.jpg",
-    role: "Sr. Front-End Developer",
+    role: "Sr. FullStack Developer",
   },
   {
     name: "sandeep Kushwaha",
@@ -118,10 +118,10 @@ function OurTeam() {
                     src={team?.img}
                     className="h-[250px] w-[400px] object-cover rounded-lg"
                   />
-                  <h6 className=" dark:text-white mt-3">{t(team?.name)}</h6>
-                  <p className="dark:text-secondary text-[14px]">
-                    ({t(team?.role)})
-                  </p>
+                  <h6 className=" dark:text-white mt-3 md:text-lg text-md">
+                    {t(team?.name)}
+                  </h6>
+                  <p className="dark:text-secondary small">({t(team?.role)})</p>
                 </div>
               </div>
             ))}

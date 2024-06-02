@@ -1,17 +1,21 @@
-import pkg from "next";
-const { default: NextConfig } = pkg;
-import runtimeCaching from "next-pwa/cache.js";
-import withPWA from "next-pwa";
+import withPWAInit from "@ducanh2912/next-pwa";
 
 /** @type {NextConfig} */
 const nextConfig = {};
 
-const enhancedNextConfig = withPWA({
+const withPWA = withPWAInit({
+  dest: "public",
+});
+export default withPWA({
   ...nextConfig,
   dest: "public",
   register: true,
   skipWaiting: true,
-  runtimeCaching,
+  cacheOnFrontEndNav: true,
+  reloadOnOnline: true,
+  swMinify: true,
+  disable: false,
+  workboxOptions: {
+    disableDevLogs: true,
+  },
 });
-
-export default enhancedNextConfig;

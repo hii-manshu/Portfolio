@@ -2,28 +2,27 @@
     "theme_color": "#F8C401",
     "background_color": "#F8C401",
     "display": "standalone",
-    "scope": "/",
     "start_url": "/",
     "name": "Himanshu Portfolio",
     "short_name": "Himanshu",
     "icons": [
         {
-            "src": "/icon-192x192.png",
+            "src": "/icons/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/icon-256x256.png",
+            "src": "/icons/icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/icon-384x384.png",
+            "src": "/icons/icon-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/icon-512x512.png",
+            "src": "/icons/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
@@ -32,29 +31,6 @@
             "sizes": "72x72",
             "type": "image/x-icon",
             "purpose": "maskable"
-        }
-    ],
-    "screenshots": [
-        {
-            "src": "/sources/screenshots.png",
-            "sizes": "1907x887",
-            "type": "image/png",
-            "form_factor": "wide",
-            "label": "Wonder Widgets"
-        },
-        {
-            "src": "/sources/mobile-screensot.png",
-            "sizes": "1907x887",
-            "type": "image/png",
-            "form_factor": "wide",
-            "label": "Wonder Widgets"
-        },
-        {
-            "src": "/sources/mobile-screensot.png",
-            "sizes": "1907x887",
-            "type": "image/png",
-            "form_factor": "wide",
-            "label": "Wonder Widgets"
         }
     ]
 }

@@ -48,7 +48,9 @@ function HomeBlogs() {
                   "Every project tells a story of the technologies embraced, each line of code a chapter in its narrative."
                 )}
               </p>
-              <small>5 min read . {t("April")} 21, 2024</small>
+              <small>
+                5 {t("min read")} . {t("April")} 21, 2024
+              </small>
             </div>
           </div>
           <div className="col-span-1">

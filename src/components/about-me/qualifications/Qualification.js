@@ -14,7 +14,7 @@ function Qualification() {
               className="w-full dark:text-secondary font-semibold"
               text={t("Education")}
             />
-            <div className="w-full grid md:grid-cols-2 grid-cols-1 items-center gap-x-5 sm:gap-y-10 gap-y-5 justify-between">
+            <div className="w-full grid sm:grid-cols-2 grid-cols-1  gap-x-5 sm:gap-y-10 gap-y-5 justify-between">
               <div className="flex flex-col justify-between gap-2">
                 <h5>{t("Master of Computer Application")}</h5>
                 <p className="text-black dark:text-white">
@@ -22,7 +22,7 @@ function Qualification() {
                 </p>
                 <p className="text-black dark:text-secondary">(2020-22)</p>
               </div>
-              <div className="flex flex-col justify-between gap-2">
+              <div className="flex flex-col  gap-2">
                 <h5>{t("Bachelor of Science")}</h5>
                 <p className="text-black dark:text-white">
                   {t("Meerut College")}

@@ -20,27 +20,15 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Sun
-            className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-secondary  rounded-md h-[100px] w-[100px] "
+            className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-black  rounded-md h-[25px] w-[25px] "
             onClick={() => setTheme("dark")}
           />
           <Moon
-            className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100  text-secondary  rounded-md h-[40px] w-[40px]"
+            className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100  text-white  rounded-md h-[25px] w-[25px]"
             onClick={() => setTheme("light")}
           />
-          <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      {/* <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent> */}
     </DropdownMenu>
   );
 }

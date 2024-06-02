@@ -65,7 +65,9 @@ function Projects() {
             text={t("Projects")}
           />
           <p className="text-secondary dark:text-white">
-            {t("in which I contributed as a Front-End Developer !")}
+            {t(
+              "Bringing pixels to life, one line of code at a time. Dive into my projects and witness the fusion of design and functionality in the digital realm."
+            )}
           </p>
         </div>
       </div>

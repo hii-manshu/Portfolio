@@ -12,8 +12,8 @@ import Image from "next/image";
 const projectsData = [
   {
     img: `/assets/images/projects/samrons.png`,
-    name: "Samrons",
-    url: "https://samrons.com",
+    name: "Visharo",
+    url: "https://visharo.com",
     technologies: ["React JS", "Laravel"],
   },
   {
@@ -109,7 +109,8 @@ function MyProjects() {
                     src={team?.img}
                     className="w-full  h-[200px] w-[300px] p-3 object-cover border-1 border-gray-600 rounded-lg"
                   />
-                  <h6 className="dark:text-white">{t(team?.name)}</h6>
+                  <h6 className="dark:text-white">{team?.name}</h6>
+                  {/* <h6 className="dark:text-white">{t(team?.name)}</h6> */}
                   {/* <div className="flex gap-2 items-center">
                     {team?.technologies.map((tech) => (
                       <p className="text-[14px] dark:text-white">({t(tech)})</p>

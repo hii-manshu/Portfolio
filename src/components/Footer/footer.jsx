@@ -10,7 +10,8 @@ function Footer() {
   const date = new Date();
   const currentYear = date.getFullYear();
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white dark:bg-black ">
+      <hr className="h-0.5 border-t-0 bg-gray-300 dark:bg-white/50" />
       <div className="container">
         <div className="md:py-20 py-10 w-full grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-5 items-start justify-between">
           <div className="flex flex-col gap-3">
@@ -107,7 +108,7 @@ function Footer() {
               href="/about-me"
               className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
             >
-              {t("About")}
+              {t("About Me")}
             </Link>
             <Link
               href="/contact-me"
