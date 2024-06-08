@@ -38,7 +38,8 @@ function Page() {
           <div className="grid md:grid-cols-3 grid-cols-1 gap-10 justify-between">
             <div className="md:col-span-2 col-span-1">
               <small>
-                7 min read&nbsp;&nbsp; . &nbsp;&nbsp;{t("May")} 02,&nbsp; 2024
+                7 {t("min read")}&nbsp;&nbsp; . &nbsp;&nbsp;{t("May")} 02,&nbsp;
+                2024
               </small>
               <div className="mt-10 flex flex-col gap-0">
                 <p className="text-black dark:text-white">

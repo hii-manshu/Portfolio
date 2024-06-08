@@ -76,7 +76,7 @@ function Blogs() {
                 </p>
                 <SecondaryButton
                   url="/blogs/technologies-which-i-used-in-this-Project"
-                  text="Read More"
+                  text={t("Read More")}
                   className="inline-block max-w-[160px] md:mt-10 mt-5"
                 />
               </div>
@@ -90,7 +90,7 @@ function Blogs() {
                   >
                     <Image
                       width={500}
-                      height={300}
+                      height={381}
                       src={blog?.image}
                       className="rounded-lg w-full h-full object-cover"
                     />

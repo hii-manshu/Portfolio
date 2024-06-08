@@ -7,6 +7,7 @@ import { MainTitle } from "./typography.component";
 import { useTranslation } from "react-i18next";
 import SecondaryButton from "./SecondaryButton";
 import Image from "next/image";
+import { Bounce, Slide } from "react-awesome-reveal";
 
 const teamData = [
   {
@@ -111,13 +112,15 @@ function OurTeam() {
             teamData.map((team, key) => (
               <div key={key}>
                 <div className="flex flex-col items-center p-2">
-                  <Image
-                    alt="team"
-                    height={250}
-                    width={400}
-                    src={team?.img}
-                    className="h-[250px] w-[400px] object-cover rounded-lg"
-                  />
+                  <Bounce>
+                    <Image
+                      alt="team"
+                      height={250}
+                      width={400}
+                      src={team?.img}
+                      className="h-[250px] w-[400px] object-cover rounded-lg"
+                    />
+                  </Bounce>
                   <h6 className=" dark:text-white mt-3 md:text-lg text-md">
                     {t(team?.name)}
                   </h6>

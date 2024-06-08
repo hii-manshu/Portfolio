@@ -1,11 +1,10 @@
+"use client";
 import React from "react";
-import { MainTitle, PageTitle } from "../common/typography.component";
 import PrimaryButton from "../common/PrimaryButton";
 import SecondaryButton from "../common/SecondaryButton";
 import { useTranslation } from "react-i18next";
-import { Lamp } from "./lamp";
 import { TypewriterEffectSmoot } from "./type-writer";
-import Image from "next/image";
+import { BackgroundBeams } from "../ui/background-beams";
 function HeroSection() {
   const { t } = useTranslation();
   return (
@@ -26,6 +25,7 @@ function HeroSection() {
               <PrimaryButton text={t("About Me")} url="/about-me" />
               <SecondaryButton url="/contact-me" text={t("Contact Me")} />
             </div>
+            {/* <BackgroundBeams /> */}
           </div>
         </div>
         {/* </Lamp> */}

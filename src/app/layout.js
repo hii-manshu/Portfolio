@@ -1,10 +1,9 @@
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 import "animate.css";
-import Navbar from "@/components/Header/header";
-import Footer from "@/components/Footer/footer";
+import i18n from "../../next-i18next.config";
+import MainLayout from "@/components/main-layout";
 
 export const metadata = {
   manifest: "/manifest.json",
@@ -17,16 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} relative`}>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <MainLayout children={children} />
       </body>
     </html>
   );
