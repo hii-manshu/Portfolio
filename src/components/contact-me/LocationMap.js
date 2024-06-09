@@ -35,8 +35,9 @@ function LocationMap() {
       style={{ height: "350px", width: "100%" }}
     >
       {/* ================ SHOW MULTIPLE LOCATIONS ON MAP ============== */}
-      {location.map((loc) => (
+      {location.map((loc, key) => (
         <Marker
+          key={key}
           lat={Number(loc.lat)}
           lng={Number(loc.lng)}
           text={loc.address}

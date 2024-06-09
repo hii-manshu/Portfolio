@@ -106,7 +106,7 @@ function Page() {
                     </p>
                     <div className="flex flex-col gap-3">
                       {keyFeaturesofReact.map((feat, key) => (
-                        <div className="flex flex-col gap-1 ">
+                        <div className="flex flex-col gap-1 " key={key}>
                           <p className="text-black dark:text-secondary font-semibold">
                             {key + 1}. {t(feat.title)}:
                           </p>
@@ -133,7 +133,7 @@ function Page() {
                     </p>
                     <div className="flex flex-col gap-3">
                       {keyFeaturesofNext.map((feat, key) => (
-                        <div className="flex flex-col gap-1 ">
+                        <div className="flex flex-col gap-1 " key={key}>
                           <p className="text-black dark:text-secondary font-semibold">
                             {key + 1}. {t(feat.title)}:
                           </p>
