@@ -183,9 +183,6 @@ textarea:focus{
   /* color: white; */
 }
 
-.App-link {
-  /* color: #61dafb; */
-}
 
 @keyframes App-logo-spin {
   from {
@@ -495,4 +492,21 @@ input[type=number] {
     transition: 0.3s;
   }
 
+}
+
+
+/*============== OUR TEAM CSS  ============*/
+.our-team-usp-card, .our-team-item:nth-child(odd) {
+  flex-direction: row;
+}
+.our-team-usp-card, .our-team-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+  .our-team-usp-card, .our-team-item:nth-child(odd) {
+      flex-direction: column;
+  }
+  .our-team-usp-card, .our-team-item:nth-child(even) {
+      flex-direction: column;
+  }
 }

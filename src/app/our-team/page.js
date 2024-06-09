@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "../../styles/ourTeam.css";
 import { PageTitle } from "@/components/common/typography.component";
 import { useTranslation } from "react-i18next";
 import TeamUSPCard from "@/components/ourTeam/teamUSPCard";
