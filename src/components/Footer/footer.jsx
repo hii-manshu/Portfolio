@@ -20,6 +20,7 @@ function Footer() {
                 src="/assets/images/newlogo.png"
                 alt="logo"
                 width={200}
+                height="auto"
                 className="rotate-logo"
               />
             </Link>

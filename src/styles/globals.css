@@ -127,6 +127,9 @@ textarea:focus{
 .text-secondary{
   color: var(--secondary-color);
 }
+.text-small{
+  font-size: 14px;
+}
 .text-error{
   color: var(--error-color);
 }

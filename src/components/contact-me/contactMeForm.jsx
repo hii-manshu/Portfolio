@@ -98,7 +98,6 @@ function ContactUsForm() {
                 placeholder={t("Country")}
                 value={country}
                 onChange={(e) => setCountry(e.target.value)}
-                onError
               />
             </div>
             <div className="mb-4">

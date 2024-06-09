@@ -5,15 +5,17 @@ import Navbar from "./Header/header";
 import Footer from "./Footer/footer";
 import { TracingBeam } from "./ui/tracing-beam";
 import TawkToWidget from "@/tawk-to-widget";
+import { Snowfall } from "react-snowfall";
 
 function MainLayout({ children }) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
     >
+      <Snowfall />
       <TawkToWidget />
       {/* <TracingBeam> */}
       <Navbar />

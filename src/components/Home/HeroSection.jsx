@@ -4,13 +4,13 @@ import PrimaryButton from "../common/PrimaryButton";
 import SecondaryButton from "../common/SecondaryButton";
 import { useTranslation } from "react-i18next";
 import { TypewriterEffectSmoot } from "./type-writer";
-import { BackgroundBeams } from "../ui/background-beams";
 function HeroSection() {
   const { t } = useTranslation();
   return (
     <div className="hero-section">
       <div className="flex  gap-0  justify-between items-center">
         {/* <Lamp> */}
+
         <div className="w-full container">
           <div className="flex flex-col gap-3">
             <h6 className="text-secondary dark:text-white uppercase animate__animated animate__backInDown">

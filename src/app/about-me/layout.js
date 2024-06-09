@@ -24,15 +24,6 @@ export default function Layout({ children }) {
   return (
     <div className="">
       <div className="about-me">
-        {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>About || Himanshu Sharma</title>
-        <link rel="canonical" href="/about-me/http://mysite.com/example" />
-        <meta
-          name="description"
-          content="A well experienced web developer"
-        ></meta>
-      </Helmet> */}
         <div
           className="about-me-hero w-full flex flex-col justify-center relative z-0"
           style={style}

@@ -10,6 +10,7 @@ import { ModeToggle } from "../mode-toggler";
 function Navbar() {
   const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
+  const [acitveLink, setAcitveLink] = useState("");
 
   //add the active class
   const toggleActiveClass = () => {
@@ -42,7 +43,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/about-me"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight `}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                } `}
+                onClick={() => setAcitveLink("/about-me")}
               >
                 {t("About Me")}
               </Link>
@@ -50,7 +54,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/projects"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                }`}
+                onClick={() => setAcitveLink("/projects")}
               >
                 {t("Projects")}
               </Link>
@@ -58,7 +65,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/blogs"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                }`}
+                onClick={() => setAcitveLink("/blogs")}
               >
                 {t("Blogs")}
               </Link>
@@ -66,7 +76,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/our-team"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                }`}
+                onClick={() => setAcitveLink("/our-team")}
               >
                 {t("Team")}
               </Link>
@@ -74,7 +87,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/buy-coffee"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                }`}
+                onClick={() => setAcitveLink("/buy-coffee")}
               >
                 {t("Buy Coffee")}
               </Link>
@@ -83,7 +99,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link
                 href="/contact-me"
-                className={`${styles.navLink} nav-link text-black dark:text-white animate__animated animate__backInRight`}
+                className={`text-md nav-link text-black dark:text-white animate__animated animate__backInRight  ${
+                  acitveLink === "/about-me" ? "text-secondary" : ""
+                }`}
+                onClick={() => setAcitveLink("/contact-me")}
               >
                 {t("Contact Me")}
               </Link>
