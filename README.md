@@ -1,7 +1,6 @@
 Take a look on my portfolio -- https://hi-manshu.vercel.app/
 
 Technologies which I used in this projects are Next JS, Tailwind CSS, Accertinity UI, ShadCN, PWA(Progressive web application) etc.
-Take a look on my portfolio
 ## Getting Started
 
 First, run the development server:
