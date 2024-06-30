@@ -98,14 +98,13 @@ function OurTeam() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     width: "100%",
+    height: "90vh",
+    objectFit: "cover",
   };
   const { t } = useTranslation();
   return (
     <div className="our-team">
-      <div
-        className="our-team-hero md:min-h-[90vh] min-h-[70vh] flex flex-col justify-center"
-        style={style}
-      >
+      <div className="our-team-hero flex flex-col justify-center" style={style}>
         <div className="container m-auto">
           <PageTitle
             className="text-white dark:text-secondary font-semibold"

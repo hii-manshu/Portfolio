@@ -9,7 +9,13 @@ const projectsData = [
     img: "/assets/images/projects/samrons.png",
     name: "Visharo",
     url: "https://visharo.com",
-    technologies: ["React JS", "Laravel"],
+    technologies: ["Next JS", "Laravel"],
+  },
+  {
+    img: "/assets/images/ensite-builder.png",
+    name: "Ensite Builder",
+    url: "https://ensitebuilder.com/",
+    technologies: ["React JS", "Node JS"],
   },
   {
     img: "/assets/images/projects/carton2me.png",
@@ -21,26 +27,26 @@ const projectsData = [
     img: "/assets/images/projects/lottorama.png",
     name: "Lottorama",
     url: "https://lottorama.net/",
-    technologies: ["React JS", "Node JS"],
+    technologies: ["Next JS", "Node JS"],
   },
-  {
-    img: "/assets/images/projects/orvel.png",
-    name: "Orvel",
-    url: "http://orvel.devshs.com/",
-    technologies: ["React JS", "Node JS"],
-  },
-  {
-    img: "/assets/images/projects/pegasus.png",
-    name: "Pegasus",
-    url: "https://pegasus.trade",
-    technologies: ["React JS", "Laravel"],
-  },
-  {
-    img: "/assets/images/projects/smile-and-go.png",
-    name: "Smile and Go",
-    url: "http://smileandgo-admin.devshs.com",
-    technologies: ["React JS", "Node JS"],
-  },
+  // {
+  //   img: "/assets/images/projects/orvel.png",
+  //   name: "Orvel",
+  //   url: "http://orvel.devshs.com/",
+  //   technologies: ["React JS", "Node JS"],
+  // },
+  // {
+  //   img: "/assets/images/projects/pegasus.png",
+  //   name: "Pegasus",
+  //   url: "https://pegasus.trade",
+  //   technologies: ["React JS", "Laravel"],
+  // },
+  // {
+  //   img: "/assets/images/projects/smile-and-go.png",
+  //   name: "Smile and Go",
+  //   url: "http://smileandgo-admin.devshs.com",
+  //   technologies: ["React JS", "Node JS"],
+  // },
 ];
 
 function Projects() {
@@ -52,13 +58,12 @@ function Projects() {
     backgroundPosition: "bottom right",
     backgroundRepeat: "no-repeat",
     width: "100%",
+    height: "90vh",
+    objectFit: "cover",
   };
   return (
     <div className="projects">
-      <div
-        className="md:min-h-[90vh] min-h-[70vh] flex flex-col justify-center"
-        style={style}
-      >
+      <div className="flex flex-col justify-center" style={style}>
         <div className="container m-auto">
           <PageTitle
             className="dark:text-secondary text-white font-semibold"

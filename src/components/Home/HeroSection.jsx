@@ -29,7 +29,7 @@ function HeroSection() {
           </div>
         </div>
         {/* </Lamp> */}
-        <div className="w-full h-full text-right bg-secondary text-center lg:block hidden animate__animated animate__fadeInTopLeft">
+        <div className="w-full h-full text-right bg-secondary text-center lg:block hidden animate__animated animate__fadeInTopLef">
           <div className="container  items-center justify-center">
             <img
               src="/assets/images/hero-img-banner.png"

@@ -13,13 +13,14 @@ const blogData = [
       "In the world of web development, choosing the right JavaScript framework can be crucial to the success of your project....",
     buttonUrl: "/blogs/react-versus-next-which-one-is-better-and-why",
   },
+
   {
-    image: "/assets/images/blog/journey.png",
-    title: "My Journey as a Front-End Developer!",
-    createdAt: "Sunday, May 02 2024",
+    image: "/assets/images/blog/technology.jpg",
+    title: "Technologies which I used in this Project",
+    createdAt: "Sunday, April 21 2024",
     description:
-      "As a front-end developer, I've embarked on a journey filled with challenges, learning opportunities, and moments of inspiration....",
-    buttonUrl: "/blogs/my-journey-as-a-front-end-developer",
+      "In the ever-evolving landscape of web development, selecting the right technologies can significantly impact the outcome of a project. Recently, I had the opportunity",
+    buttonUrl: "/blogs/technologies-which-i-used-in-this-Project",
   },
 ];
 
@@ -28,17 +29,15 @@ function Blogs() {
   const style = {
     background: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/assets/images/projects-bg.png)`,
     backgroundSize: "cover",
-    // backgroundPosition: "center top",
     backgroundPosition: "bottom right",
     backgroundRepeat: "no-repeat",
     width: "100%",
+    height: "90vh",
+    objectFit: "cover",
   };
   return (
     <div>
-      <div
-        className="md:min-h-[90vh] min-h-[70vh] flex flex-col justify-center"
-        style={style}
-      >
+      <div className=" flex flex-col justify-center" style={style}>
         <div className="container m-auto">
           <PageTitle
             className="text-white dark:text-secondary font-semibold"
@@ -57,25 +56,26 @@ function Blogs() {
                 <Image
                   width={500}
                   height={300}
-                  src="/assets/images/blog/technology.jpg"
+                  alt=""
+                  src="/assets/images/blog/journey.png"
                   className="rounded-lg w-full "
                 />
               </div>
               <div className="w-full">
                 <h4 className="font-semibold text-black text-secondary">
-                  {t("Technologies which I used in this Project")}
+                  {t("My Journey as a Front-End Developer!")}
                 </h4>
-                <p className="text-black dark:text-white text-[12px]">
-                  {t("Sunday")}, {t("April")} 21 2024
+                <p className="text-black dark:text-white text-xs">
+                  {t("Sunday")}, {t("May")} 02 2024
                 </p>
                 <p className="text-black dark:text-white mt-3">
                   {t(
-                    "In the ever-evolving landscape of web development, selecting the right technologies can significantly impact the outcome of a project. Recently, I had the opportunity"
+                    "As a front-end developer, I've embarked on a journey filled with challenges, learning opportunities, and moments of inspiration...."
                   )}
                   ...
                 </p>
                 <SecondaryButton
-                  url="/blogs/technologies-which-i-used-in-this-Project"
+                  url="/blogs/my-journey-as-a-front-end-developer"
                   text={t("Read More")}
                   className="inline-block max-w-[160px] md:mt-10 mt-5"
                 />
@@ -92,6 +92,7 @@ function Blogs() {
                       width={500}
                       height={381}
                       src={blog?.image}
+                      alt=""
                       className="rounded-lg w-full h-full object-cover"
                     />
                     <div className="flex flex-col justify-between w-full md:h-full">

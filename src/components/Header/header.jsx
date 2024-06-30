@@ -38,7 +38,7 @@ function Navbar() {
           <ul
             className={`${styles.navMenu} ${
               isActive ? styles.active : ""
-            } unorder-list bg-white dark:bg-black`}
+            } unorder-list bg-white dark:bg-black lg:h-auto h-screen`}
           >
             <li onClick={removeActive}>
               <Link

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 
-function PaypalPaymentGateway({ amount, setIsPaypal }) {
+function PaypalPaymentGateway({ amount, setIsSuccess }) {
   const [orderID, setOrderID] = useState(false);
 
   // creates a paypal order
@@ -28,10 +28,10 @@ function PaypalPaymentGateway({ amount, setIsPaypal }) {
   // check Approval
   const onApprove = (data, actions) => {
     return actions.order.capture().then(function (details) {
-      console.log("approved !");
       const { payer } = details;
-      close();
-      window.alert(t("Thanks! for buying me a Coffee!"));
+      setIsSuccess(true);
+      // close();
+      // window.alert(t("Thanks! for buying me a Coffee!"));
     });
   };
 

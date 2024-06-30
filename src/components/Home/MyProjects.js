@@ -29,23 +29,29 @@ const projectsData = [
     technologies: ["React JS", "Node JS"],
   },
   {
-    img: "/assets/images/projects/orvel.png",
-    name: "Orvel",
-    url: "http://orvel.devshs.com/",
+    img: "/assets/images/ensite-builder.png",
+    name: "Ensite Builder",
+    url: "https://ensitebuilder.com/",
     technologies: ["React JS", "Node JS"],
   },
-  {
-    img: "/assets/images/projects/pegasus.png",
-    name: "Pegasus",
-    url: "http://pegasus.devshs.com/",
-    technologies: ["React JS", "Laravel"],
-  },
-  {
-    img: "/assets/images/projects/smile-and-go.png",
-    name: "Smile and Go",
-    url: "http://smileandgo-admin.devshs.com",
-    technologies: ["React JS", "Node JS"],
-  },
+  // {
+  //   img: "/assets/images/projects/orvel.png",
+  //   name: "Orvel",
+  //   url: "http://orvel.devshs.com/",
+  //   technologies: ["React JS", "Node JS"],
+  // },
+  // {
+  //   img: "/assets/images/projects/pegasus.png",
+  //   name: "Pegasus",
+  //   url: "http://pegasus.devshs.com/",
+  //   technologies: ["React JS", "Laravel"],
+  // },
+  // {
+  //   img: "/assets/images/projects/smile-and-go.png",
+  //   name: "Smile and Go",
+  //   url: "http://smileandgo-admin.devshs.com",
+  //   technologies: ["React JS", "Node JS"],
+  // },
 ];
 
 function MyProjects() {

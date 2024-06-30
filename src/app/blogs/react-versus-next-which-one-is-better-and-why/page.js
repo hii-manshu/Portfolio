@@ -50,13 +50,12 @@ function Page() {
     backgroundPosition: "bottom right",
     backgroundRepeat: "no-repeat",
     width: "100%",
+    height: "90vh",
+    objectFit: "cover",
   };
   return (
     <div>
-      <div
-        className="md:min-h-[90vh] min-h-[70vh] flex flex-col justify-center"
-        style={style}
-      >
+      <div className=" flex flex-col justify-center" style={style}>
         <div className="container m-auto">
           <MainTitle
             className="text-white dark:text-secondary tracking-tight font-semibold"

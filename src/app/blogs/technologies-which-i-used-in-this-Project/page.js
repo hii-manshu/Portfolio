@@ -64,13 +64,12 @@ function Page() {
     // backgroundPosition: "bottom right",
     backgroundRepeat: "no-repeat",
     width: "100%",
+    height: "90vh",
+    objectFit: "cover",
   };
   return (
     <div>
-      <div
-        className="md:min-h-[90vh] min-h-[70vh] flex flex-col justify-center"
-        style={style}
-      >
+      <div className="flex flex-col justify-center" style={style}>
         <div className="container m-auto">
           <MainTitle
             className="text-white dark:text-secondary font-semibold"
@@ -124,6 +123,19 @@ function Page() {
                     "In conclusion, the successful execution of this project was made possible by the strategic integration of various technologies, each contributing its unique strengths to the overall solution. From building responsive UI components with React JS to optimizing performance with Next JS and Tailwind CSS, every technology played a vital role in achieving the project's objectives. Moving forward, I'm excited to continue exploring and harnessing the power of innovative technologies to create even more impactful projects in the future."
                   )}
                 </p>
+                <div className="flex flex-col mt-5">
+                  <p className="text-black dark:text-white text-sm">
+                    You can get the code of this Porfolio from here 👇{" "}
+                  </p>
+
+                  <a
+                    className="text-secondary text-sm underline"
+                    href="https://github.com/hii-manshu/Port-folio"
+                    target="_blank"
+                  >
+                    https://github.com/hii-manshu/Port-folio
+                  </a>
+                </div>
               </div>
 
               <div className="share mt-5">

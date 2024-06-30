@@ -14,25 +14,13 @@ function ContactMe() {
               rgba(0,0,0, 0.8)), url(/assets/images/about-bg.png)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    // minHeight: 300,
     width: "100%",
+    height: "90vh",
     objectFit: "cover",
   };
   return (
     <div className="about-me">
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact Me || Himanshu Sharma</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta
-          name="description"
-          content="You can contact to Me using Whatsapp, call, Email, Instagram etc."
-        ></meta>
-      </Helmet> */}
-      <div
-        className="w-full flex flex-col justify-center lg:min-h-screen md:min-h-[80vh] min-h-[60vh]"
-        style={style}
-      >
+      <div className="w-full flex flex-col justify-center" style={style}>
         <div className=" container flex flex-col gap-1">
           <PageTitle
             text={t("Contact Me")}

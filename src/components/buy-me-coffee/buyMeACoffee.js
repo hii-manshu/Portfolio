@@ -22,6 +22,7 @@ const style = {
   backgroundPosition: "right center",
   // minHeight: 300,
   width: "100%",
+  height: "90vh",
   objectFit: "cover",
 };
 
@@ -40,10 +41,7 @@ function BuyMeACoffee() {
   return (
     <>
       <div>
-        <div
-          className="w-full flex flex-col justify-center lg:min-h-screen md:min-h-[80vh] min-h-[60vh]"
-          style={style}
-        >
+        <div className="w-full flex flex-col justify-center" style={style}>
           {" "}
           <div className=" container flex flex-col gap-1">
             <PageTitle
@@ -60,7 +58,7 @@ function BuyMeACoffee() {
       </div>
       <div className="container ">
         <div className="w-full grid lg:grid-cols-2 grid-cols-1 items-baseline gap-10 md:my-20 my-10">
-          <div className="w-full shadow-lg bg-white dark:bg-black rounded-lg w-full m-auto py-5 sm:px-8 px-2">
+          <div className="w-full shadow-lg bg-white dark:bg-[#1e1e1e] rounded-lg w-full m-auto py-5 sm:px-8 px-2">
             <div className="flex flex-col gap-5 ">
               <div className="flex flex-col gap-1">
                 <h6 className="text-black dark:text-secondary">
@@ -93,7 +91,9 @@ function BuyMeACoffee() {
               </div>
             </div>
           </div>
-          <div className="w-full shadow-lg bg-white dark:bg-black rounded-lg w-full py-5 sm:px-8 px-2">
+          <div
+            className={` w-full shadow-lg bg-white dark:bg-[#1e1e1e] rounded-lg w-full py-5 sm:px-8 px-2 `}
+          >
             <div className="flex flex-col gap-5 ">
               <div className="flex flex-row items-center gap-1">
                 <SubTitle

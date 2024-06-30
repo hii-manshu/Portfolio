@@ -24,14 +24,14 @@
   .navMenu {
     margin-left: auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 40px;
   }
 
   /* media queries */
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 1024px){
 
     /* hamburger */
     .hamburger {

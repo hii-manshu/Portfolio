@@ -16,7 +16,6 @@ export default function Layout({ children }) {
               rgba(0,0,0, 0.6)), url(/assets/images/about-me-bg.png)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    minHeight: 300,
     width: "100%",
     height: "90vh",
     objectFit: "cover",
@@ -25,7 +24,7 @@ export default function Layout({ children }) {
     <div className="">
       <div className="about-me">
         <div
-          className="about-me-hero w-full flex flex-col justify-center relative z-0"
+          className="about-me-hero w-full flex flex-col justify-center relative -z-10"
           style={style}
         >
           <div className="container">
