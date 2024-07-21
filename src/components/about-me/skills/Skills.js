@@ -60,11 +60,10 @@ const skills = [
     title: "next js",
     url: "https://nextjs.org/",
   },
-
   {
-    img: "/assets/images/tools/trello-logo.png",
-    title: "trello",
-    url: "https://trello.com/guide",
+    img: "/assets/images/tools/firebase.png",
+    title: "Firebase",
+    url: "https://firebase.google.com/",
   },
   {
     img: "/assets/images/tools/git.png",
@@ -83,11 +82,22 @@ const skills = [
     url: "https://bitbucket.org/product",
   },
 
-  // {
-  //   img: "/assets/images/tools/slack-logo.png",
-  //   title: "slack",
-  //   url: "https://slack.com/intl/en-in",
-  // },
+  {
+    img: "/assets/images/tools/linear.webp",
+    title: "linear",
+    url: "https://linear.app/",
+  },
+  {
+    img: "/assets/images/tools/trello-logo.png",
+    title: "trello",
+    url: "https://trello.com/guide",
+  },
+
+  {
+    img: "/assets/images/tools/slack-logo.png",
+    title: "slack",
+    url: "https://slack.com/intl/en-in",
+  },
 ];
 
 function Skills() {

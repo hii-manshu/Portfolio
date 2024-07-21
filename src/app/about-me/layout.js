@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Layout({ children }) {
@@ -20,6 +21,12 @@ export default function Layout({ children }) {
     height: "90vh",
     objectFit: "cover",
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo(0, 0);
+    }
+  }, []);
   return (
     <div className="">
       <div className="about-me">

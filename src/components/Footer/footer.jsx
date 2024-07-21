@@ -24,7 +24,7 @@ function Footer() {
                 className="rotate-logo"
               />
             </Link>
-            <p className="text-[14px] dark:text-white">
+            <p className="text-sm dark:text-white">
               {t(
                 "Himanshu Sharma is a well experience web developer who currently work as a Front-End Developer in an IT based firm."
               )}{" "}
@@ -46,7 +46,7 @@ function Footer() {
                 <span className="font-semibold dark:text-white">
                   {t("India")}:{" "}
                 </span>
-                <span className="text-[14px] dark:text-white">
+                <span className="text-sm dark:text-white">
                   {t(
                     "Behind SDA School, Street no. 07, Krishna Vihar, Meerut Road Hapur"
                   )}
@@ -95,25 +95,25 @@ function Footer() {
             </p>
             <Link
               href="/"
-              className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white "
+              className="hover:text-yellow-600 text-sm hover:underline dark:text-white "
             >
               {t("Home")}
             </Link>
             <Link
               href="/blogs"
-              className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
+              className="hover:text-yellow-600 text-sm hover:underline dark:text-white"
             >
               {t("Blog")}
             </Link>
             <Link
               href="/about-me"
-              className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
+              className="hover:text-yellow-600 text-sm hover:underline dark:text-white"
             >
               {t("About Me")}
             </Link>
             <Link
               href="/contact-me"
-              className="hover:text-yellow-600 text-[14px] hover:underline dark:text-white"
+              className="hover:text-yellow-600 text-sm hover:underline dark:text-white"
             >
               {t("Contact Me")}
             </Link>
@@ -154,20 +154,20 @@ function Footer() {
         <hr className="h-0.5 border-t-0 bg-gray-300 dark:bg-white/50" />
         <div className="py-5">
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
-            <div className="text-[14px] text-center">
+            <div className="text-sm text-center">
               &copy; {currentYear} {t("All Rights Reserved")} ||{" "}
               <Link href="/" className="font-[14px] dark:text-secondary">
-                himanshusharma.com
+                hemanshu.vercel.app
               </Link>
             </div>
             {/* <div className="flex flex-wrap gap-3 items-center justify-center">
-              <Link href="/" className="text-[14px]">
+              <Link href="/" className="text-sm">
                 {t("Terms and Conditions")} |
               </Link>
-              <Link href="/" className="text-[14px]">
+              <Link href="/" className="text-sm">
                 {t("Privacy Policy")} |
               </Link>
-              <Link href="/" className="text-[14px]">
+              <Link href="/" className="text-sm">
                 {t("Cookies Policy")}
               </Link>
             </div> */}
