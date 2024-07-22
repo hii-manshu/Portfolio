@@ -31,7 +31,6 @@
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.1",
     "i18next-http-backend": "^2.5.1",
-    "i18next-localstorage-cache": "^1.1.1",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.365.0",
     "moment": "^2.30.1",
