@@ -9,14 +9,26 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next) // passes i18n down to react-i18next
   .use(LanguageDetector)
+  // .use(LanguageCache)
   .init({
-    lng: "en", // default language
+    // lng: "en",
     fallbackLng: "en", // fallback language
     debug: true, // enable debug mode
     whitelist: availableLanguages,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
+    // detection: {
+    //   // Language detection options
+    //   order: ["localStorage", "navigator", "htmlTag", "path", "subdomain"],
+    //   caches: ["localStorage"], // Store language preference in localStorage
+    // },
+    // backend: {
+    //   loadPath: "/locales/{{lng}}/{{ns}}.json", // Path to your translation files
+    // },
+    // react: {
+    //   useSuspense: false, // Set to true if using suspense with react
+    // },
   });
 
 export default i18n;
