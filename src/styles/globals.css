@@ -208,6 +208,7 @@ textarea:focus{
   /* background-image: linear-gradient(to right, #e9d362 0%, #333333  51%, #e9d362  100%); */
   background-color: var(--secondary-color);
   padding: 5px 15px;
+  min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border: 1px solid var(--secondary-color);
@@ -232,6 +233,7 @@ textarea:focus{
 .secondary-btn {
   /* background-image: linear-gradient(to right, #C02425 0%, #F0CB35  51%, #C02425  100%); */
   padding: 5px 15px;
+  min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border: 1px solid var(--secondary-color);

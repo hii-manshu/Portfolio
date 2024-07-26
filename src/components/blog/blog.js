@@ -77,7 +77,7 @@ function Blogs() {
                 <SecondaryButton
                   url="/blogs/my-journey-as-a-front-end-developer"
                   text={t("Read More")}
-                  className="inline-block max-w-[160px] md:mt-10 mt-5"
+                  className="inline-block max-w-[120px] md:mt-10 mt-5"
                 />
               </div>
             </div>
@@ -109,7 +109,7 @@ function Blogs() {
                       <SecondaryButton
                         text={t("Read More")}
                         url={blog?.buttonUrl}
-                        className="inline-block max-w-[160px] mt-5"
+                        className="inline-block max-w-[120px] mt-5"
                       />
                     </div>
                   </div>

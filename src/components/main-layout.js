@@ -3,7 +3,6 @@ import React from "react";
 import { ThemeProvider } from "./theme-provider";
 import Navbar from "./Header/header";
 import Footer from "./Footer/footer";
-import { TracingBeam } from "./ui/tracing-beam";
 import TawkToWidget from "@/tawk-to-widget";
 import { Snowfall } from "react-snowfall";
 
@@ -15,7 +14,7 @@ function MainLayout({ children }) {
       enableSystem
       disableTransitionOnChange
     >
-      <Snowfall />
+      {/* <Snowfall /> */}
       <TawkToWidget />
       {/* <TracingBeam> */}
       <Navbar />

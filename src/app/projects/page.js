@@ -97,11 +97,11 @@ function Projects() {
                       <div className="flex gap-5 items-center">
                         <PrimaryButton
                           text={project?.technologies[0]}
-                          className="py-2 px-4 capitalize"
+                          className=" !p-0 !py-1"
                         />
                         <SecondaryButton
                           text={project?.technologies[1]}
-                          className="py-2 px-4 capitalize"
+                          className="!p-0 !py-1"
                         />
                       </div>
                     </div>
